@@ -286,19 +286,19 @@ enum address_class
   LOC_CONST,		/* Value is constant int */
   LOC_STATIC,		/* Value is at fixed address */
   LOC_REGISTER,		/* Value is in register */
-  LOC_ARG,		/* Value is at spec'd position in arglist */
+  LOC_ARG,		    /* Value is at spec'd position in arglist */
   LOC_LOCAL,		/* Value is at spec'd pos in stack frame */
   LOC_TYPEDEF,		/* Value not used; definition in SYMBOL_TYPE
-			   Symbols in the namespace STRUCT_NAMESPACE
-			   all have this class.  */
+						Symbols in the namespace STRUCT_NAMESPACE
+						all have this class.  */
   LOC_LABEL,		/* Value is address in the code */
   LOC_BLOCK,		/* Value is address of a `struct block'.
-			   Function names have this class.  */
+						Function names have this class.  */
   LOC_EXTERNAL,		/* Value is at address not in this compilation.
-			   This is used for .comm symbols
-			   and for extern symbols within functions.
-			   Inside GDB, this is changed to LOC_STATIC once the
-			   real address is obtained from a loader symbol.  */
+						This is used for .comm symbols
+						and for extern symbols within functions.
+						Inside GDB, this is changed to LOC_STATIC once the
+						real address is obtained from a loader symbol.  */
   LOC_CONST_BYTES	/* Value is a constant byte-sequence.   */
 };
 
